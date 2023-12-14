@@ -1,38 +1,183 @@
-.App {
-  text-align: center;
+body{
+  background-color: #fff9eb;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.mainLinks{
+  text-decoration: none;
+  color: #fff9eb;
+  font-family: 'DM Sans', sans-serif;
+  font-size: large;
+}
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #1c224b;
+  position: sticky;
+  top:0;
+  z-index: 100;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.flyersMainContainer{
+display: flex;
+justify-content: center;
+background-color: #1c224b;
+}
+.flyersContainer{
+  width: 960px;
+}
+.card{
+  padding: 20px;
+}
+.videoSize{
+  width: 850px;
+}
+.imageSize{
+  width: 800px;
+  height: 550px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+/* .underline {
+  height: 0.25rem;
+  width: 5rem;
+  background: #ffcc53;
+  margin-left: auto;
+  margin-right: auto;
+} */
+
+.containerWArrows{
+  display: flex;
+  align-items: center;
+}
+.reviewArrow{
+  border-radius: 50%;
+  border: 1px solid #1c224b;
+  width: 1.7rem;
+  height: 1.7rem;
+  cursor: pointer;
+  color: #1c224b;
+  background-color: #fff9eb;
+}
+.reviewArrow:hover{
+  background-color: #1c224b;
+  color: #ffcc53;
+}
+.prevArrow{
+  margin-right: 40px;
+}
+.nextArrow{
+  margin-left: 40px;
+}
+
+.reviewBox{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.feedbackMain{
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  /* background-color: #1c224b; */
+  background-image: url("https://wallpapercave.com/dwp2x/wp4087593.jpg");
+  background-size: cover;
+  height: 560px;
+}
+.feedbackBox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff9eb;
+  padding: 35px;
+  border: 3px solid #1c224b;
+  width: 300px;
+  height: 300px;
+  margin-top: 10px;
+}
+.img-container{
+display: flex;
+}
+.feedbackText{
+  color: #1c224b;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 20px;
+}
+.person-img{
+  border-radius: 50%;
+  width: 110px;
+  height: 110px;
+  border: 2px solid #1c224b;
+  display: block;
+  object-fit: cover;
+  /* position: absolute; */
+  padding: 20px;
+  background-color: #1c224b;
+}
+.quote-icon{
+  color: #ffcc53;
+  font-size: 2rem;
+  position: absolute;
+  margin-top: 116px;
+  margin-left: 105px;
+  rotate: 20grad;
+}
+.author{
+  font-family: 'DM Sans', sans-serif;
+  color: #1c224b;
+}
+.fav{
+  color: #1c224b;
+  background-color: #ffcc53;
+  font-size: 14px;
+}
+.infoText{
+  font-family: 'DM Sans', sans-serif;
+  color: #1c224b;
+  font-size: 12px;
+}
+.product-card{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  width: 200px;
+  padding: 30px;
+  font-family: 'DM Sans', sans-serif;
+  color: #1c224b;
+  font-size: 15px;
+}
+.itemsBox{
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 50px;
+
+}
+.filterBox{
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.filterButton{
+  padding: 8px;
+  font-family: 'DM Sans', sans-serif;
+  margin-left: 15px;
+  font-size: 15px;
+  color: #1c224b;
+  background-color: #ffcc53;
+  border: none;
+}
+.filterButton:hover{
+  color: #fff9eb;
+  background-color: #4b9960;
+  cursor: pointer;
+}
+.nameAndPrice{
+  display: flex;
+  flex-direction: column;
+
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
