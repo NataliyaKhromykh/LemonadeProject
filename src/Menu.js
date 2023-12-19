@@ -7,21 +7,27 @@ function Menu() {
 
     const [food, setFood] = useState(data);
 
-    const chosenFood = (searchTerm) =>{
-        const newFood = data.filter(element => element.searchTerm === searchTerm);
-        setFood(newFood);
-    }
+    //  const chosenFood = (searchTerm) =>{
+    //     const newFood = data.filter(element => element.searchTerm === searchTerm);
+    //     setFood(newFood);
+    // }
+  
+  
+
+
 
     return(
         <div>
             <div>
-                <FilterButtons filteredFood={chosenFood}/>
+                <FilterButtons 
+                data={data}
+                setFood={setFood}/>
             </div>
         <div>
             <Food itemsForSale={food}/>
         </div>
         </div>
     )
-}
+    }
 
 export default Menu;

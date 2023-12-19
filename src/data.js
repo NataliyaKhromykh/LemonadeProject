@@ -61,14 +61,14 @@ export const data = [
     {
         id: 1,
         name: "Açai Mixed Berry Smoothie Bowl",
-        searchTerm: "breakfast vegan",
+        searchTerm: ["breakfast", "vegan"],
         price: 15,
         image: AcaiMixed
     },
     {
         id: 2,
         name: "Blueberry Lemon Pancakes",
-        searchTerm: "breakfast vegan",
+        searchTerm: ["breakfast", "vegan"],
         price: 13,
         image: BlueberryPancake
     },
@@ -82,28 +82,28 @@ export const data = [
     {
         id: 4,
         name: "Choco-Banana Chia Pudding",
-        searchTerm: "breakfast vegan",
+        searchTerm: ["breakfast", "vegan"],
         price: 12,
         image: ChocoBanana
     },
     {
         id: 5,
         name: "Cappuchino Chia Pudding",
-        searchTerm: "breakfast vegan",
+        searchTerm: ["breakfast", "vegan"],
         price: 12,
         image: CoffeeChia
     },
     {
         id: 6,
         name: "Creamy Mashroom Toast",
-        searchTerm: "breakfast vegan",
+        searchTerm: ["breakfast", "vegan"],
         price: 16,
         image: CreamyMushroom
     },
     {
         id: 7,
         name: "Creamy Steel Cut Oatmeal with Caramelized Banana",
-        searchTerm: "breakfast vegan",
+        searchTerm: ["breakfast", "vegan"],
         price: 14,
         image: CreamySteel
     },
@@ -138,7 +138,7 @@ export const data = [
     {
         id: 12,
         name: "Chia Pudding with Mango Puree",
-        searchTerm: "breakfast vegan",
+        searchTerm: ["breakfast", "vegan"],
         price: 12,
         image: MangoChia
     },
@@ -152,21 +152,21 @@ export const data = [
     {
         id: 14,
         name: "Blueberry Yogurt Parfait",
-        searchTerm: "breakfast vegan",
+        searchTerm: ["breakfast", "vegan"],
         price: 12,
         image: Parfait
     },
     {
         id: 15,
         name: "Peach Crisp Yogurt Bowl",
-        searchTerm: "breakfast vegan",
+        searchTerm: ["breakfast", "vegan"],
         price: 10,
         image: PeachCrisp
     },
     {
         id: 16,
         name: "Peanut Butter Puncakes",
-        searchTerm: "breakfast vegan",
+        searchTerm: ["breakfast", "vegan"],
         price: 13,
         image: PeanutPancake
     },
@@ -187,7 +187,7 @@ export const data = [
     {
         id: 19,
         name: "Superfood Peanut Butter Oatmeal Bowl",
-        searchTerm: "breakfast" || 'vegan',
+        searchTerm: ["breakfast", "vegan"],
         price: 14,
         image: Superfood
     },
