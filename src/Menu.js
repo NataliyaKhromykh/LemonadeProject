@@ -1,20 +1,13 @@
 import { useState } from 'react';
-import { data } from './data';
+import { data } from './data/data';
 import Food from './Food';
 import FilterButtons from './FilterButtons';
+import Footer from './Footer';
 
 function Menu() {
 
     const [food, setFood] = useState(data);
-
-    //  const chosenFood = (searchTerm) =>{
-    //     const newFood = data.filter(element => element.searchTerm === searchTerm);
-    //     setFood(newFood);
-    // }
   
-  
-
-
 
     return(
         <div>
@@ -25,6 +18,9 @@ function Menu() {
             </div>
         <div>
             <Food itemsForSale={food}/>
+        </div>
+        <div>
+            <Footer/>
         </div>
         </div>
     )

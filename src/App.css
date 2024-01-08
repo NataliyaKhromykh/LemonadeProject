@@ -1,12 +1,18 @@
 body{
   background-color: #fff9eb;
 }
+.logoImg{
+  width:120px;
+  }
 
 .mainLinks{
   text-decoration: none;
   color: #fff9eb;
   font-family: 'DM Sans', sans-serif;
   font-size: large;
+}
+.mainLinks:hover{
+  color: #ffcc53;
 }
 nav{
   display: flex;
@@ -17,6 +23,9 @@ nav{
   top:0;
   z-index: 100;
 }
+
+
+/* CAROUSEL */
 
 .flyersMainContainer{
 display: flex;
@@ -38,13 +47,8 @@ background-color: #1c224b;
 }
 
 
-/* .underline {
-  height: 0.25rem;
-  width: 5rem;
-  background: #ffcc53;
-  margin-left: auto;
-  margin-right: auto;
-} */
+
+/* REVIEW */
 
 .containerWArrows{
   display: flex;
@@ -69,7 +73,6 @@ background-color: #1c224b;
 .nextArrow{
   margin-left: 40px;
 }
-
 .reviewBox{
   display: flex;
   align-items: center;
@@ -83,7 +86,7 @@ background-color: #1c224b;
   /* background-color: #1c224b; */
   background-image: url("https://wallpapercave.com/dwp2x/wp4087593.jpg");
   background-size: cover;
-  height: 560px;
+  height: 600px;
 }
 .feedbackBox{
   display: flex;
@@ -138,6 +141,9 @@ display: flex;
   color: #1c224b;
   font-size: 12px;
 }
+
+/* MENU */
+
 .product-card{
   display: flex;
   flex-direction: column;
@@ -176,8 +182,187 @@ display: flex;
 .nameAndPrice{
   display: flex;
   flex-direction: column;
-
 }
+
+/* FOOTER */
+
+.footerContainer{
+  background-color: #1c224b;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  align-items: center;
+  color: #fff9eb;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px;
+}
+.socialImgCont{
+  width: 20px;
+}
+.contDetails{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contPar{
+cursor: pointer;
+}
+.contPar:hover{
+  color: #4b9960;
+}
+.socialMedia{
+  display: flex;
+  flex-direction: column;
+}
+.socialImg:hover{
+  background-color: #4b9960;
+  border-radius: 50%;
+}
+.socialImg{
+  width: 30px;
+  padding: 4px;
+  margin: 10px;
+  cursor: pointer;
+}
+.legalInform{
+  font-size: 10px;
+}
+.toMyPage{
+color: #fff9eb;
+}
+.toMyPage:hover{
+  color: #ffcc53;
+}
+
+/* ABOUT US */
+
+.aboutUsContainer{
+  display: flex;
+  flex-direction: column;
+}
+.videoStory{
+  width: 750px;
+}
+.videoAndStory{
+  display: flex;
+  margin: 20px;
+}
+.WelcomeStoryh1{
+color: #1c224b;
+font-family: 'Caveat', cursive;
+font-size: 40px;
+}
+.WelcomeStoryPar{
+  font-family: 'DM Sans', sans-serif;
+  color: #1c224b;
+  font-size: 16px;
+  line-height: 1.8;
+}
+.showMore{
+  background-color: #ffcc53;
+  color: #1c224b;
+  font-family: 'Caveat', cursive;
+  font-size: 16px;
+  width: 170px;
+  border: none;
+  padding: 4px;
+}
+.showMore:hover{
+  color: #fff9eb;
+  background-color: #1c224b;
+  cursor: pointer;
+}
+
+/* CONTACTS */
+.contactsContainer{
+font-family: 'DM Sans', sans-serif;
+color: #1c224b;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.contactsH1{
+  margin-top: 50px;
+}
+.mapAndContacts{
+  display: flex;
+  /* width: 1000px; */
+  justify-content: space-around;
+  margin-top: 20px;
+  align-items: center;
+}
+.contDetailsB{
+  display: flex;
+  align-items: center;
+}
+.phoneAndAddress{
+  display: flex;
+  flex-direction: column;
+  margin: 50px;
+}
+.socialImgContB{
+  width: 30px;
+}
+.contParB{
+  font-size: 16px;
+}
+.contParB:hover{
+  cursor: pointer;
+}
+.mapImg{
+  width: 600px;
+  /* border: 15px solid #1c224b; */
+}
+.mediaBlue{
+  width: 40px;
+  margin: 10px;
+}
+.mediaBlue:hover{
+  background-color: #ffcc53;
+  cursor: pointer;
+  padding: 3px;
+  border-radius: 50px;
+}
+.footerAddition{
+  margin-top: 50px;
+}
+
+/* ACCORDION */
+.accordionContainer{
+width: 1000px;
+padding: 30px;
+}
+.active {
+  padding: 10px 40px;
+  background-color: #4b9960;
+  cursor: pointer;
+  font-family: 'DM Sans', sans-serif;
+  color: #fff9eb;
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  }
+  
+  .default {
+  padding: 10px 30px;
+  font-size: 20px;
+  background-color: #ffcc53;
+  cursor: pointer;
+  margin-top: 5px;
+  font-family: 'DM Sans', sans-serif;
+  color: #1c224b;
+  display: flex;
+  justify-content: center;
+  }
+  
+  .content {
+  padding: 50px 30px;
+  font-family: 'DM Sans', sans-serif;
+  color: #1c224b;
+  display: flex;
+  justify-content: center;
+  }
+
 
 
 

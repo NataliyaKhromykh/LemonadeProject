@@ -3,7 +3,7 @@ import React from 'react';
 import Carousel from './Carousel';
 import NewMenuContainer from './NewMenuContainer';
 import Feedback from './Feedback';
-import Contacts from './Contacts';
+import Footer from './Footer';
 
 function Home() {
     return(
@@ -19,9 +19,8 @@ function Home() {
     <div>
       <Feedback/>
     </div>
-    <div>
-      <Contacts/>
-    </div>
+
+    <Footer/>
     </div>
     );
 }
