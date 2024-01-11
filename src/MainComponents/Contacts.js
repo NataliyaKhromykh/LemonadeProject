@@ -1,11 +1,11 @@
 import React from "react";
-import facebook from "./Assests/facebookBlue.png";
-import instagram from "./Assests/instagramBlue.png";
-import whatsapp from "./Assests/whatsappBlue.png";
-import phone from "./Assests/phoneBlue.png";
-import address from "./Assests/addressBlue.png";
-import map from "./Assests/map.png";
-import { Accordion } from "./Accordion/Accordion";
+import facebook from "./../Assests/facebookBlue.png";
+import instagram from "./../Assests/instagramBlue.png";
+import whatsapp from "./../Assests/whatsappBlue.png";
+import phone from "./../Assests/phoneBlue.png";
+import address from "./../Assests/addressBlue.png";
+import map from "./../Assests/map.png";
+import { Accordion } from "../Accordion/Accordion";
 
 
 

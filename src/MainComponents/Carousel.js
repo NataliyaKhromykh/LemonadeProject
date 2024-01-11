@@ -2,7 +2,7 @@ import React from 'react'
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import './App.css';
+import './../App.css';
 
 
   
@@ -59,13 +59,13 @@ function Carousel() {
           <img className='imageSize' src='promoNewMenu.png' alt='card'/>
           </div>
           <div className='card'>
-          <video className='videoSize' src='promoCoffee.mp4' autoplay="autoplay" loop="loop" muted defaultMuted playsinline/>
+          <video className='videoSize' src='promoCoffee.mp4' autoPlay="autoplay" loop="loop" muted defaultMuted playsinline/>
           </div>
           <div className='card'>
           <img  className='imageSize' src='promoBirthday.png' alt='card'/>
           </div>
           <div className='card'>
-          <video className='videoSize' src='promoCookingClass.mp4' autoplay="autoplay" loop="loop" muted defaultMuted playsinline/>
+          <video className='videoSize' src='promoCookingClass.mp4' autoPlay="autoplay" loop="loop" muted defaultMuted playsinline/>
           </div>
 
         </Slider>

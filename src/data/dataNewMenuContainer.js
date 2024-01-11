@@ -1,9 +1,9 @@
-import AcaiMixed from './Photo/AcaiMixed.JPG';
-import EggsBen from './Photo/EggsBen.JPG';
-import PeachCrisp from './Photo/PeachCrisp.JPG';
-import LemonPancake from './Photo/LemonPancake.JPG';
-import English from './Photo/English.JPG';
-import CreamyMushroom from './Photo/CreamyMushroom.JPG';
+import AcaiMixed from './../Photo/AcaiMixed.JPG';
+import EggsBen from './../Photo/EggsBen.JPG';
+import PeachCrisp from './../Photo/PeachCrisp.JPG';
+import LemonPancake from './../Photo/LemonPancake.JPG';
+import English from './../Photo/English.JPG';
+import CreamyMushroom from './../Photo/CreamyMushroom.JPG';
 
 export const NewMenuContainerData = [
     {

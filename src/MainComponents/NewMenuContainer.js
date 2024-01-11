@@ -1,8 +1,10 @@
 import { useState, useEffect } from "react";
-import './NewMenuContainer.css';
+import './../App.css';
 import {AiOutlineArrowLeft} from "react-icons/ai";
 import {AiOutlineArrowRight} from "react-icons/ai";
-import { NewMenuContainerData } from "./NewMenuContainer-data";
+import { NewMenuContainerData } from "../data/dataNewMenuContainer";
+
+
 
 const NewMenuContainer = () => {
 

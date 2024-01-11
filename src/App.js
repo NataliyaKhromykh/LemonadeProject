@@ -6,13 +6,16 @@ import React from 'react';
  Route,
  Link
 } from "react-router-dom";
-import Menu from './Menu';
-import Home from './Home';
-import Contacts from './Contacts';
-import AboutUs from './AboutUs';
+import Menu from './MainComponents/Menu';
+import Home from './MainComponents/Home';
+import Contacts from './MainComponents/Contacts';
+import AboutUs from './MainComponents/AboutUs';
 import logo from './Assests/LemonadeLogo.jpg';
 import basket from './Assests/basket.png';
-import MyBasketPage from './MyBasketPage';
+import MyBasketPage from './MainComponents/MyBasketPage';
+import Popup from './MainComponents/PopUp';
+import SignUp from './MainComponents/SignUp';
+
 
 
 
@@ -25,6 +28,7 @@ function App() {
       <Link className='mainLinks' to="/menu">Menu</Link>
       <Link className='mainLinks' to="/aboutUs">About Us</Link>
       <Link to="/contacts" className='mainLinks'>Contacts</Link>
+      <Link><SignUp/></Link>
       <Link className='mainLinks' to="/basket"><img src={basket} width="30px" alt="basket"/></Link>
     </nav>
 

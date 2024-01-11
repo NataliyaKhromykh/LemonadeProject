@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import feedback from "./data/dataFeedback";
+import feedback from "../data/dataFeedback";
 import { GiCutLemon } from "react-icons/gi";
 import {AiOutlineArrowLeft} from "react-icons/ai";
 import {AiOutlineArrowRight} from "react-icons/ai";

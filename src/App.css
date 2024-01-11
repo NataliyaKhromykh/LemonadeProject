@@ -47,6 +47,62 @@ background-color: #1c224b;
 }
 
 
+/* NEW MENU CONTAINER */
+.findOutMore{
+  display: flex;
+  align-items: center;
+}
+.newMenuContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.newMenuBox{
+  display: flex;
+}
+.newMenuMiniBox{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  padding: 40px;
+}
+.container{
+  display: flex;
+  justify-content: center;
+}
+.moreLink:hover{
+  cursor: pointer;
+  color: #ffcc53;
+}
+.newMenuContainerText{
+color: #1c224b;
+font-family: 'DM Sans', sans-serif;
+}
+.itemName{
+  font-family: 'DM Sans', sans-serif;
+  color: #1c224b;
+}
+.menuArrowTwo{
+  border-radius: 50%;
+  width: 1.7rem;
+  height: 1.7rem;
+  cursor: pointer;
+}
+.menuArrowTwo:hover{
+  background-color: #1c224b;
+  color: #fff9eb;
+}
+.slidemenu{
+  transition: all 1s ease;
+}
+.currentmenu{
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
 
 /* REVIEW */
 
@@ -363,6 +419,108 @@ padding: 30px;
   justify-content: center;
   }
 
+  /* POPUP */
+  .popup{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fbfbfb84;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
+  .popup-inner{
+    position: relative;
+    width: 650px;
+    /* background-color: white; */
+  }
+  .popup-inner .close-btn{
+    position: absolute;
+    font-size: 16px;
+    top: 5px;
+    right: 5px;
+    background-color: #1c224b;
+    color: #fff9eb;
+    border: none;
+  }
+  .close-btn:hover{
+    color: #ffcc53;
+  }
 
+ .buttonSignUp{
+  background-color: #1c224b;
+  border: none;
+ }
+ .divPromo{
+  background-color: #ffcc53;
+  height: 550px;
+ }
+ .promoPhoto{
+  width: 350px;
+ }
+ .detailsBarWrapper{ 
+ position: relative;
+ display: flex;
+ align-items: center;
+ height: auto;
+ background-color: #1c224b;
+ 
+ }
+ .contactWrapper{
+  margin-left: 10px;
+  padding: 10px;
+ }
+ .promoH3{
+  color: #1c224b;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 18px;
+ }
+ .infoPromo{
+  display: flex;
+  justify-content: center;
+ }
+ .promoP{
+  color: #ffcc53;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 10px;
+ }
+.messageInput{
+  width: 200px;
+  color: #1c224b;
+  font-size: 12px;
+  padding: 5px;
+  border: none;
+  background-color: #fff9eb;
+  font-family: 'DM Sans', sans-serif;
+}
+.inputName{
+  color: #ffcc53;
+  font-family: 'DM Sans', sans-serif;
+}
+.signingUpContainer{
+  display: flex;
+  flex-direction: column;
+}
+.submitBtn{
+  margin-top: 20px;
+  bottom: 10px;
+  right: 10px;
+  background-color: #ffcc53;
+  color: #1c224b;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 24px 12px 24px;
+  cursor: pointer;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+}
+.submitBtn:hover{
+background-color: #4b9960;
+}
+.infoSpan{
+  font-size: x-large;
+}
 

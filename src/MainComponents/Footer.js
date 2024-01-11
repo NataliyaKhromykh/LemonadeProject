@@ -1,11 +1,24 @@
-import instagram from "./Assests/instagram.png";
-import facebook from "./Assests/facebook.png";
-import whatsapp from "./Assests/whatsapp.png";
-import phone from  "./Assests/telephone.png";
-import address from "./Assests/address.png";
+import instagram from "./../Assests/instagram.png";
+import facebook from "./../Assests/facebook.png";
+import whatsapp from "./../Assests/whatsapp.png";
+import phone from  "./../Assests/telephone.png";
+import address from "./../Assests/address.png";
+import { useState, useEffect } from "react";
+import Popup from "./PopUp";
 
 
 function Footer(){
+
+    const[buttonPopup,setButtonPopup] = useState(false);
+    const[timedPopup,setTimedPopup] = useState(false);
+
+
+    useEffect(() =>{
+        setTimeout(() => {
+            setTimedPopup(true);
+        },3000);
+    },[]);
+
 return(
     <div className="footerContainer">
 
@@ -42,7 +55,6 @@ The website was developed for educational purposes and is not a real offer.</p>
             <p className="contPar">Delivery Police</p>
             <p className="contPar">Terms & Conditions</p>
         </div>
-
     </div>
 
 )
