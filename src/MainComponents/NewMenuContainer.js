@@ -45,8 +45,9 @@ const NewMenuContainer = () => {
                     return (
                         <div className={index === currentSlide ? "slidemenu currentmenu" : "slidemenu"} key={index}>
                             {index === currentSlide && (
-                                <div className="newMenuBox">
+                                <div key={index} className="newMenuBox">
                                     <div className="newMenuMiniBox">
+                                        <p>{slide.index}</p>
                                     <img src={slide.promo} width={200} alt="menuitem"/>
                                     <p className="itemName"> {slide.promoName} </p>
                                     </div>
