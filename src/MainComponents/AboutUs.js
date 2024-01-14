@@ -13,7 +13,7 @@ function AboutUs() {
     return <div className="aboutUsContainer">
         <div className="videoAndStory">
                   <div className='card'>
-          <video className='videoStory' src='aboutUs.mp4' autoplay="autoplay" loop="loop" muted defaultMuted playsinline/>
+          <video className='videoStory' src='aboutUs.mp4' autoPlay="autoplay" loop="loop" muted defaultmuted="true" playsInline/>
           </div>
           <div>
             <h1 className="WelcomeStoryh1">Welcome to our story!</h1>

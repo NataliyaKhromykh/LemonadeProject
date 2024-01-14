@@ -3,21 +3,14 @@ import facebook from "./../Assests/facebook.png";
 import whatsapp from "./../Assests/whatsapp.png";
 import phone from  "./../Assests/telephone.png";
 import address from "./../Assests/address.png";
-import { useState, useEffect } from "react";
-import Popup from "./PopUp";
+import React from 'react';
+ import {Link} from "react-router-dom";
 
 
 function Footer(){
 
-    const[buttonPopup,setButtonPopup] = useState(false);
-    const[timedPopup,setTimedPopup] = useState(false);
 
 
-    useEffect(() =>{
-        setTimeout(() => {
-            setTimedPopup(true);
-        },3000);
-    },[]);
 
 return(
     <div className="footerContainer">
@@ -50,10 +43,12 @@ The website was developed for educational purposes and is not a real offer.</p>
 
         <div>
             <h2>Information</h2>
-            <p className="contPar">Privacy Policy</p>
-            <p className="contPar">Refund Policy</p>
-            <p className="contPar">Delivery Police</p>
-            <p className="contPar">Terms & Conditions</p>
+            <div className="infoBox">
+            <Link className="contPar" to="/contacts">Privacy Policy</Link>
+            <Link className="contPar" to="/contacts">Refund Policy</Link>
+            <Link className="contPar" to="/contacts">Delivery Police</Link>
+            <Link className="contPar" to="/contacts">Terms & Conditions</Link>
+            </div>
         </div>
     </div>
 

@@ -59,13 +59,13 @@ function Carousel() {
           <img className='imageSize' src='promoNewMenu.png' alt='card'/>
           </div>
           <div className='card'>
-          <video className='videoSize' src='promoCoffee.mp4' autoPlay="autoplay" loop="loop" muted defaultMuted playsinline/>
+          <video className='videoSize' src='promoCoffee.mp4' autoPlay="autoplay" loop="loop" muted defaultmuted="true" playsInline/>
           </div>
           <div className='card'>
           <img  className='imageSize' src='promoBirthday.png' alt='card'/>
           </div>
           <div className='card'>
-          <video className='videoSize' src='promoCookingClass.mp4' autoPlay="autoplay" loop="loop" muted defaultMuted playsinline/>
+          <video className='videoSize' src='promoCookingClass.mp4' autoPlay="autoplay" loop="loop" muted defaultmuted="true" playsInline/>
           </div>
 
         </Slider>

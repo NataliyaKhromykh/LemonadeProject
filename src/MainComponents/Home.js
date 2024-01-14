@@ -4,7 +4,7 @@ import Carousel from './Carousel';
 import NewMenuContainer from './NewMenuContainer';
 import Feedback from './Feedback';
 import Footer from './Footer';
-// import Popup from "./PopUp";
+
 
 function Home() {
     return(
@@ -13,11 +13,7 @@ function Home() {
     <div className='flyersContainer'>
       <Carousel/>
     </div>
-    {/* <div>
-    <Popup trigger={false}>
-            <h3>My pop up</h3>
-    </Popup>
-    </div> */}
+
     </div>
     <div className='newMenuContainer'>
       <NewMenuContainer/>

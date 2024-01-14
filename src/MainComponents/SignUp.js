@@ -22,12 +22,10 @@ function SignUp(){
     </div>
     <div>
     <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
-            
     </Popup>
     </div>
     <div>
     <Popup trigger={timedPopup} setTrigger={setTimedPopup}>
-            
     </Popup>
     </div>
     </div>
