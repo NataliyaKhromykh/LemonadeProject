@@ -15,7 +15,7 @@ const NewMenuContainer = () => {
     const [card, setCard] = useState(0);
     const autoScroll = true;
     let slideInterval;
-    let intervalTime = 5000;
+    let intervalTime = 7000;
   
     const nextSlide = () => {
       setCard(card === slideLength - 3 ? 0 : card + 1);
@@ -27,13 +27,16 @@ const NewMenuContainer = () => {
   
     const isMobile = window.innerWidth < 900; 
   
-    function auto() {
-      slideInterval = setInterval(nextSlide, intervalTime);
-    }
-  
+    // function auto() {
+    //     slideInterval = setInterval(nextSlide, intervalTime);
+    //   }
+      
     useEffect(() => {
       if (autoScroll) {
-        auto();
+        // auto();
+
+        slideInterval = setInterval(nextSlide, intervalTime);
+
       }
       return () => clearInterval(slideInterval);
     }, [autoScroll, slideInterval, card]);
