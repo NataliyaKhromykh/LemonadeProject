@@ -659,7 +659,6 @@ background-color: #4b9960;
   .videoStory{
     width: 600px;
   }
-
 }
 
 @media all and (max-width:500px){
@@ -813,6 +812,7 @@ background-color: #4b9960;
 .legalInform{
   font-size: 5px;
 }
+
 
 
 }
