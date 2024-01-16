@@ -87,10 +87,12 @@ nav{
 display: flex;
 justify-content: center;
 background-color: #1c224b;
+width: 100%;
 }
 .flyersContainer{
   width: 960px;
 }
+
 .card{
   padding: 20px;
 }
@@ -121,17 +123,22 @@ background-color: #1c224b;
 .photoWArrowsBox{
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .newMenuBox{
   display: flex;
-  
+  align-items: flex-start;
 }
 .newMenuMiniBox{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  width: 200px;
+  justify-content: flex-start;
   padding: 40px;
+  height: 300px;
+  width: 200px;
+}
+.itemNameBox{
+width: 200px;  
 }
 .container{
   display: flex;
@@ -680,11 +687,11 @@ background-color: #4b9960;
     width: 300px;
   }
   .videoSize{
-    width: 300px;
+    width: 250px;
   }
   .imageSize{
-    width: 300px;
-    height: 160px;
+    width: 250px;
+    height: 150px;
   }
   .flyersContainer{
     width: auto;
@@ -695,18 +702,23 @@ background-color: #4b9960;
   .card{
     padding: 10px;
   }
+  .itemName{
+    font-size: 10px;
+  }
   .newMenuMiniBox{
+    justify-content: center;
     padding: 5px;
+    height: 150px;
+    width: 200px;
+    align-items: center;
+  }
+  .itemNameBox{
+  width: 100px;  
   }
   .newMenuPhoto{
     width: 100px;
   }
-  .newMenuContainer{
-    width: 375px;
-  }
-  .ourNewMenuSlider{
-    width: 375px;
-  }
+
 
   .popup-inner{
     width: 350px;
@@ -800,5 +812,6 @@ background-color: #4b9960;
 .legalInform{
   font-size: 5px;
 }
+
 
 }
