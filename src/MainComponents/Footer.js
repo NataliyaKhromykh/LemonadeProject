@@ -5,6 +5,7 @@ import phone from  "./../Assests/telephone.png";
 import address from "./../Assests/address.png";
 import React from 'react';
  import {Link} from "react-router-dom";
+ import Form from "./Formspree";
 
 
 function Footer(){
@@ -33,6 +34,8 @@ return(
             <p className="contPar">Orange Street, 17,<br></br>Orlando,FL,USA</p>
         </div>
 </div>
+<div><Form/></div>
+
 
         <div>
             <p className="legalInform">Designed and Developed by <a className='toMyPage' target='_blank' rel="noreferrer" href="https://nataliyakhromykh-webdeveloper.glitch.me/">Nataliya Khromykh</a> ©️2024 All rights reserved<br></br>

@@ -7,6 +7,7 @@ import Footer from './Footer';
 function Menu() {
 
     const [food, setFood] = useState(data);
+    
   
 
     return(

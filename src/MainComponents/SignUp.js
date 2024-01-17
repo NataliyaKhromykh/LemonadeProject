@@ -11,7 +11,7 @@ function SignUp(){
     useEffect(() =>{
         setTimeout(() => {
             setTimedPopup(true);
-        },3000);
+        },7000);
     },[]);
 
 

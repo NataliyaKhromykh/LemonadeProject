@@ -35,6 +35,9 @@ const NewMenuContainer = () => {
       
       return () => clearInterval(setTimer);
     }, [autoScroll, slideInterval, card])
+
+
+
   
     return (
 

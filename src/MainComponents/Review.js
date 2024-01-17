@@ -1,13 +1,19 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import feedback from "../data/dataFeedback";
 import { GiCutLemon } from "react-icons/gi";
 import {AiOutlineArrowLeft} from "react-icons/ai";
 import {AiOutlineArrowRight} from "react-icons/ai";
 
 
-const Review = () => {
+
+function Review(){
     const [index,setIndex] = useState(0);
     const {name,image,fav,text} = feedback[index];
+
+
+
+
+
 
 const checkNumber = (number) => {
     if(number > feedback.length -1){

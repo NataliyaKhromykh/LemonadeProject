@@ -15,12 +15,25 @@ import MyBasketPage from './MyBasketPage';
 import SignUp from './SignUp';
 import { RxHamburgerMenu } from "react-icons/rx";
 import Sidebar from './Sidebar';
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import gsap from 'gsap';
 
 
 function Header() {
 
     const [sidebarOpen,setSidebarOpen] = useState(false);
+    const [isMounted, setIsMounted] = useState(false);
+
+    useEffect(() => {
+      setIsMounted(true);
+    }, []);
+
+
+      useEffect(() => {
+        if (isMounted) {
+            gsap.from('.mainLinks', {opacity: 0, duration: 2, delay: 1 });
+          };
+        }, [isMounted]);
 
   
   return <Router>
@@ -31,7 +44,7 @@ function Header() {
       <Link className='mainLinks forBlock' to="/aboutUs">About Us</Link>
       <Link to="/contacts" className='mainLinks forBlock'>Contacts</Link>
       <Link><SignUp/></Link>
-      <RxHamburgerMenu className="hamIcon" onClick={() => setSidebarOpen(true)}/>
+      <RxHamburgerMenu className="hamIcon mainLinks" onClick={() => setSidebarOpen(true)}/>
       <div>
     <Sidebar trigger={sidebarOpen} setTrigger={setSidebarOpen}>
     </Sidebar>
