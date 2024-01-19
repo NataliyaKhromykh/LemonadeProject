@@ -4,7 +4,9 @@ function Food({itemsForSale}) {
         const {id,name,price,image} = element;
         return( 
         <div className="product-card" key={id}>
+
         <img src={image} width="200px" alt="item"/>
+        
         <div className="nameAndPrice">
         <div>
         <h3>{name}</h3>

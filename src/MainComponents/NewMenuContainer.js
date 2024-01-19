@@ -25,13 +25,12 @@ const NewMenuContainer = () => {
     };
   
     const isMobile = window.innerWidth < 900; 
-    slideInterval = setInterval(nextSlide, 7000);
+    slideInterval = setInterval(nextSlide, 5000);
 
     useEffect(() => {
-  
         const setTimer = setInterval (() => {
-          slideInterval(seconds => seconds +1);
-        },7000);
+          slideInterval(seconds => seconds + 1);
+        },5000);
       
       return () => clearInterval(setTimer);
     }, [autoScroll, slideInterval, card])
@@ -54,7 +53,7 @@ const NewMenuContainer = () => {
               <img className="newMenuPhoto" src={AllCards[card].promo} alt='menuitem' />
   
               <div className="itemNameBox">
-              <p className="itemName"> {AllCards[card].promoName} </p>
+              <h3 className="dishName"> {AllCards[card].promoName} </h3>
               </div>
             </div>
           </div>
@@ -64,8 +63,8 @@ const NewMenuContainer = () => {
               <div className="newMenuMiniBox">
                 <img className="newMenuPhoto" src={card.promo} alt='newmenuitem' />
                 <div className="itemNameBox">
-                <p className="itemName"> {card.promoName} </p>
-                              </div>
+                <h3 className="dishName"> {card.promoName} </h3>
+                </div>
               </div>
             </div>
           ))

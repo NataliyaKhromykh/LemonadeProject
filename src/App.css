@@ -81,6 +81,66 @@ nav{
   cursor: pointer;
   color: #ffcc53;
 }
+
+/* MY BASKET PAGE */
+.basketName{
+  font-family: 'DM Sans', sans-serif;
+  font-size: 30px;
+  color: #1c224b;
+}
+.mybasketContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffcb534e;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.basketItemContainer{
+  display: flex;
+  background-color: #fff9eb;
+  width: 800px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+.nameBox{
+  display: flex;
+  width: 400px;
+  flex-wrap: wrap;
+}
+.imgInCart{
+  width: 60px;
+}
+.deleteIcon{
+  width: 30px;
+}
+.deleteIcon:hover{
+  cursor: pointer;
+}
+.basketPrice{
+  font-family: 'DM Sans', sans-serif;
+  font-size: 20px;
+  color: #1c224b;
+}
+.paymentBtn{
+  cursor: pointer;
+  padding: 8px;
+  font-family: 'DM Sans', sans-serif;
+  margin-left: 15px;
+  font-size: 15px;
+  color: #1c224b;
+  background-color: #ffcc53;
+  border: none;
+  margin:5px;
+  font-size: 16px;
+  font-weight: bolder;
+}
+.paymentBtn:hover{
+background-color: #1c224b;
+color: #fff9eb;
+}
+
 /* CAROUSEL */
 
 .flyersMainContainer{
@@ -148,6 +208,8 @@ width: 200px;
   text-decoration: none;
   color: #1c224b;
 }
+
+
 .moreLink:hover{
   cursor: pointer;
   color: #ffcc53;
@@ -155,10 +217,6 @@ width: 200px;
 .newMenuContainerText{
 color: #1c224b;
 font-family: 'DM Sans', sans-serif;
-}
-.itemName{
-  font-family: 'DM Sans', sans-serif;
-  color: #1c224b;
 }
 .menuArrowTwo{
   border-radius: 50%;
@@ -272,30 +330,18 @@ display: flex;
   font-size: 12px;
 }
 
-/* MENU */
 
-.product-card{
+/* MENU*/
+.MenuBox{
   display: flex;
-  flex-direction: column;
-  width: 200px;
-  padding: 30px;
-  font-family: 'DM Sans', sans-serif;
-  color: #1c224b;
-  font-size: 15px;
 }
-.itemsBox{
+.categoryNames{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 50px;
 
 }
-.filterBox{
-  display: flex;
-  justify-content: center;
-  margin-top: 30px;
-}
-.filterButton{
+.categorySelected{
   padding: 8px;
   font-family: 'DM Sans', sans-serif;
   margin-left: 15px;
@@ -303,16 +349,114 @@ display: flex;
   color: #1c224b;
   background-color: #ffcc53;
   border: none;
+  margin:5px;
 }
-.filterButton:hover{
+.categorySelected:hover{
   color: #fff9eb;
   background-color: #4b9960;
   cursor: pointer;
+  margin:5px;
 }
-.nameAndPrice{
+.categoryButtonSelected{
+  padding: 8px;
+  font-family: 'DM Sans', sans-serif;
+  margin-left: 15px;
+  font-size: 15px;
+  color: #fff9eb;
+background-color: #1c224b;
+  border: none;
+  margin:5px;
+}
+.categoryButton{
+  cursor: pointer;
+  padding: 8px;
+  font-family: 'DM Sans', sans-serif;
+  margin-left: 15px;
+  font-size: 15px;
+  color: #1c224b;
+  background-color: #ffcc53;
+  border: none;
+  margin:5px;
+}
+
+.dishesContainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+}
+.filterBox{
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.categoryNames{
+  display: flex;
+}
+.product-card{
   display: flex;
   flex-direction: column;
+  width: 200px;
+  padding: 30px;
+  justify-content: space-between;
+  height: 370px;
 }
+.dishName{
+  font-family: 'DM Sans', sans-serif;
+  color: #1c224b;
+  font-size: 16px;
+}
+.product-card:hover{
+background-color: #ffcb534e;
+}
+.priceBox{
+  display: flex;
+  justify-content: center;
+}
+.minusPlusBox{
+  width: 70px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.minusPlusBtn{
+  background-color: #ffcc53;
+  padding: 5px;
+  border: none;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  color: #1c224b;
+}
+.minusPlusBtn:hover{
+  background-color: #4b9960;
+  cursor: pointer;
+  color: #fff9eb;
+}
+.quantityNumber{
+  font-family: 'DM Sans', sans-serif;
+  font-size: 18px;
+  color: #1c224b;
+}
+.quantAddBox{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.addBtn{
+  background-color: #ffcc53;
+  padding: 5px;
+  border: none;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  color: #1c224b;
+  width: 120px;
+}
+.addBtn:hover{
+  color: #fff9eb;
+  cursor: pointer;
+  background-color: #1c224b;
+}
+
 
 /* FOOTER */
 
@@ -498,7 +642,6 @@ padding: 0px;
   display: flex;
   justify-content: center;
   }
-
   /* POPUP */
   .popup{
     position: fixed;
@@ -702,7 +845,7 @@ background-color: #4b9960;
   .card{
     padding: 10px;
   }
-  .itemName{
+  .dishName{
     font-size: 10px;
   }
   .newMenuMiniBox{
@@ -782,15 +925,9 @@ background-color: #4b9960;
 .product-card{
   padding: 10px;
 }
-.filterBox{
+/* .filterBox{
   flex-wrap: wrap;
-}
-.filterButton{
-  padding: 4px;
-  margin-left: 15px;
-  margin-top: 10px;
-  font-size: 15px;
-}
+} */
 
 .mapImg{
   width: 200px;

@@ -5,24 +5,27 @@ import './../App.css';
  Route,
  Link
 } from "react-router-dom";
-import Menu from './Menu';
 import Home from './Home';
 import Contacts from './Contacts';
 import AboutUs from './AboutUs';
 import logo from './../Assests/LemonadeLogo.jpg';
 import basket from './../Assests/basket.png';
-import MyBasketPage from './MyBasketPage';
+import MyBasketPage from './ReduxComponents/Cart/MyBasketPage';
 import SignUp from './SignUp';
 import { RxHamburgerMenu } from "react-icons/rx";
 import Sidebar from './Sidebar';
 import React, { useState, useEffect } from "react";
+import { useSelector } from 'react-redux';
+import { getTotalQuantity } from '../redux/cartSlice';
 import gsap from 'gsap';
+import Menu from '../Menu';
 
 
 function Header() {
 
     const [sidebarOpen,setSidebarOpen] = useState(false);
     const [isMounted, setIsMounted] = useState(false);
+    const totalQuantity = useSelector(getTotalQuantity);
 
     useEffect(() => {
       setIsMounted(true);
@@ -49,7 +52,7 @@ function Header() {
     <Sidebar trigger={sidebarOpen} setTrigger={setSidebarOpen}>
     </Sidebar>
     </div>
-      <Link className='mainLinks' to="/basket"><img className='basket' src={basket} alt="basket"/></Link>
+      <Link className='mainLinks' to="/basket"><img className='basket' src={basket} alt="basket"/><span className='cartNumber'>{totalQuantity}</span></Link>
     </nav>
 
 
