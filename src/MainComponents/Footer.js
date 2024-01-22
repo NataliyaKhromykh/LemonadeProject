@@ -4,14 +4,11 @@ import whatsapp from "./../Assests/whatsapp.png";
 import phone from  "./../Assests/telephone.png";
 import address from "./../Assests/address.png";
 import React from 'react';
- import {Link} from "react-router-dom";
- import Form from "./Formspree";
+import {Link} from "react-router-dom";
+import ModalApp from "./ModalApp";
 
 
 function Footer(){
-
-
-
 
 return(
     <div className="footerContainer">
@@ -21,7 +18,8 @@ return(
             <img className="socialImg" src={facebook} alt="social"/>
             <img className="socialImg" src={whatsapp} alt="social"/>
         </div>
-
+<div><ModalApp/></div>
+        
         <div>
 <div>
         <div className="contDetails">
@@ -34,7 +32,6 @@ return(
             <p className="contPar">Orange Street, 17,<br></br>Orlando,FL,USA</p>
         </div>
 </div>
-<div><Form/></div>
 
 
         <div>

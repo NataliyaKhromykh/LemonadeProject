@@ -10,10 +10,11 @@ const Dish = ({dish}) => {
     const [quantity, setQuantity] = useState(1);
     const dispatch = useDispatch();
         return (
+            
         <div>
 
             <div className="product-card">
-            <img src={`./Photo/${dish.img}.JPG`} width="200px" alt="item"/>
+            <img src={`./Photo/${dish.img}.JPG`} width="200px" alt="dish"/>
 
             <div className='dishnameBox'>          
             <h3 className='dishName'>{dish.name}</h3>
@@ -30,8 +31,9 @@ const Dish = ({dish}) => {
         }}>Add to cart</button>
         </div>
             </div>
-
+  
         </div>
+
     )
 }
 export default Dish;

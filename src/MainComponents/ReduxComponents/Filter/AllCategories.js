@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import gsap from 'gsap';
 
 import Filter from "./Filter";
+
 function AllCategories(){
 
     const [isMounted, setIsMounted] = useState(false);
@@ -18,7 +19,7 @@ function AllCategories(){
         }, [isMounted]);
     return (
         <div className="categoryNames">
-            {["All Items","Only Vegan","Breakfast", "Lunch/Dinner", "Soups", "Appetizers","Beverages"]
+            {['All Items', 'Breakfast', 'Lunch/Dinner', 'Soups', 'Appetizers','Beverage']
             .map(category => <Filter key={category}  category={category}/>)}
         </div>
     )

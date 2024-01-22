@@ -19,6 +19,7 @@ import { useSelector } from 'react-redux';
 import { getTotalQuantity } from '../redux/cartSlice';
 import gsap from 'gsap';
 import Menu from '../Menu';
+import ModalApp from './ModalApp';
 
 
 function Header() {
@@ -46,7 +47,12 @@ function Header() {
       <Link className='mainLinks forBlock' to="/menu">Menu</Link>
       <Link className='mainLinks forBlock' to="/aboutUs">About Us</Link>
       <Link to="/contacts" className='mainLinks forBlock'>Contacts</Link>
-      <Link><SignUp/></Link>
+
+      {/* можно ли сделать вот так без link? */}
+      <SignUp/> 
+
+      <Link><ModalApp/></Link>
+
       <RxHamburgerMenu className="hamIcon mainLinks" onClick={() => setSidebarOpen(true)}/>
       <div>
     <Sidebar trigger={sidebarOpen} setTrigger={setSidebarOpen}>

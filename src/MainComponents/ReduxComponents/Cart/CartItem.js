@@ -17,8 +17,8 @@ const CartItem = ({cartItem}) => {
                 <div className="nameBox">
                 <h3 className="dishName">{dishes.name}</h3>
             </div>
-        {cartItem.quantity}
-        <p>Price: ${dishes.price * cartItem.quantity}</p>
+        <p className="indivPrice">x{cartItem.quantity}</p>
+        <p className="indivPrice">Price: ${dishes.price * cartItem.quantity}</p>
         <span onClick={() => dispatch(removeItemFromCart({cartItemId: cartItem.id}))}>
         <img className="deleteIcon" src={deleteIcon} alt="deleteIcon"/>
         </span>

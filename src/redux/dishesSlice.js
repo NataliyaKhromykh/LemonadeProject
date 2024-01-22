@@ -6,7 +6,7 @@ export const dishesSlice = createSlice({
         selectedCategory: 'All Items'
     },
     reducers: {
-        fiterCategory:(state, action) => {
+        filterCategory:(state, action) => {
             state.selectedCategory = action.payload;
         }
 

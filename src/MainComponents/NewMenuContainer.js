@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import './../App.css';
 import {AiOutlineArrowLeft} from "react-icons/ai";
 import {AiOutlineArrowRight} from "react-icons/ai";
@@ -13,8 +13,8 @@ const NewMenuContainer = () => {
     const slideLength = NewMenuContainerData.length;
   
     const [card, setCard] = useState(0);
-    const autoScroll = true;
-    let slideInterval;
+    // const autoScroll = true;
+ 
   
     const nextSlide = () => {
       setCard(card === slideLength - 3 ? 0 : card + 1);
@@ -25,15 +25,15 @@ const NewMenuContainer = () => {
     };
   
     const isMobile = window.innerWidth < 900; 
-    slideInterval = setInterval(nextSlide, 5000);
+      //  const slideInterval = setInterval(nextSlide, 5000);
 
-    useEffect(() => {
-        const setTimer = setInterval (() => {
-          slideInterval(seconds => seconds + 1);
-        },5000);
+    // useEffect(() => {
+    //     const setTimer = setInterval (() => {
+    //       slideInterval(seconds => seconds + 1);
+    //     },5000);
       
-      return () => clearInterval(setTimer);
-    }, [autoScroll, slideInterval, card])
+    //   return () => clearInterval(setTimer);
+    // }, [autoScroll, slideInterval, card])
 
 
 
