@@ -1,10 +1,15 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import './../App.css';
 import {AiOutlineArrowLeft} from "react-icons/ai";
 import {AiOutlineArrowRight} from "react-icons/ai";
 import { NewMenuContainerData } from "../data/dataNewMenuContainer";
 import React from 'react';
 import {Link} from "react-router-dom";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import ScrollTrigger from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger)
 
 
 
@@ -13,7 +18,8 @@ const NewMenuContainer = () => {
     const slideLength = NewMenuContainerData.length;
   
     const [card, setCard] = useState(0);
-    // const autoScroll = true;
+    const container = useRef();
+    const tl = useRef();
  
   
     const nextSlide = () => {
@@ -25,22 +31,15 @@ const NewMenuContainer = () => {
     };
   
     const isMobile = window.innerWidth < 900; 
-      //  const slideInterval = setInterval(nextSlide, 5000);
-
-    // useEffect(() => {
-    //     const setTimer = setInterval (() => {
-    //       slideInterval(seconds => seconds + 1);
-    //     },5000);
-      
-    //   return () => clearInterval(setTimer);
-    // }, [autoScroll, slideInterval, card])
-
-
-
+    useGSAP(() => {
+      tl.current = gsap.from(".newMenuContainerText",{opacity: 0, duration: 3, delay: 1, scrollTrigger: {
+          trigger: ".newMenuContainerText"
+      }});
+  }, { scope: container });
   
     return (
 
-    <div className={`newMenuContainer${isMobile ? 'mobileVers' : ''}`}>
+    <div ref={container} className={`newMenuContainer${isMobile ? 'mobileVers' : ''}`}>
         <div className="container">
         <h1 className="newMenuContainerText">New this week:</h1>
         </div>
