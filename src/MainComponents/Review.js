@@ -1,17 +1,33 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import feedback from "../data/dataFeedback";
 import { GiCutLemon } from "react-icons/gi";
 import {AiOutlineArrowLeft} from "react-icons/ai";
 import {AiOutlineArrowRight} from "react-icons/ai";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import ScrollTrigger from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger)
 
 
 
 function Review(){
     const [index,setIndex] = useState(0);
     const {name,image,fav,text} = feedback[index];
+    const container = useRef();
+    const tl = useRef();
 
-
-
+    useGSAP(() => {
+        tl.current = gsap.from(".effRight",{opacity: 0, duration:2, delay: 1, x: 100, scrollTrigger: {
+            trigger: ".effRight"
+        }});
+        tl.current = gsap.from(".effLeft",{opacity: 0, duration:2, delay: 1, x: -100, scrollTrigger: {
+            trigger: ".effLeft"
+        }});
+        tl.current = gsap.from(".quote-icon",{opacity: 0, duration:2, delay: 2, scrollTrigger: {
+            trigger: ".quote-icon"
+        }});
+    }, { scope: container });
 
 
 
@@ -37,8 +53,8 @@ const checkNumber = (number) => {
         });
     };
 
-    return <div className="containerWArrows">
-        <AiOutlineArrowLeft className="reviewArrow prevArrow" onClick={prevPerson}/>
+    return <div ref={container} className="containerWArrows">
+        <AiOutlineArrowLeft className="reviewArrow prevArrow effLeft" onClick={prevPerson}/>
         <article className="feedbackBox">
         <div className="img-container"> 
         <img src={image} alt={name} className="person-img"/>
@@ -52,7 +68,7 @@ const checkNumber = (number) => {
         <p className='infoText'>{text}</p>
         </div>
     </article>
-    <AiOutlineArrowRight className="reviewArrow nextArrow" onClick={nextPerson}/>
+    <AiOutlineArrowRight className="reviewArrow nextArrow effRight" onClick={nextPerson}/>
     </div>;
 };
 

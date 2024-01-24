@@ -1,35 +1,3 @@
-.modal {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  }
-  
-  .overlay {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #1a1a1a94;
-  width: 100%;
-  height: 100%;
-  }
-  
-  .modal_content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #FFFFFF;
-  font-size: 70px;
-  width: 50%;
-  height: 50%;
-  }
-
-
-
-
-
 
 body{
   background-color: #fff9eb;
@@ -46,6 +14,7 @@ body{
 }
 .mainLinks:hover{
   color: #ffcc53;
+  cursor: pointer;
 }
 nav{
   display: flex;
@@ -68,6 +37,22 @@ nav{
   color: #ffcc53;
   cursor: pointer;
 }
+
+
+/* BackToTopBUTTON */
+.backToTopBtn{
+  background-color: transparent;
+  border: none;
+  bottom: 50px;
+  right: 50px;
+  position: fixed;
+}
+.upImg{
+width: 50px;
+}
+
+
+
 
 /* Sidebar */
 .sidebar{
@@ -755,6 +740,7 @@ padding: 0px;
 .inputName{
   color: #ffcc53;
   font-family: 'DM Sans', sans-serif;
+  margin-top: 20px;
 }
 .signingUpContainer{
   display: flex;
@@ -845,6 +831,13 @@ background-color: #4b9960;
 }
 
 @media all and (max-width:500px){
+  .backToTopBtn{
+    bottom: 20px;
+    right: 20px;
+  }
+  .upImg{
+    width: 35px;
+  }
   .logoImg{
     width:60px;
     }

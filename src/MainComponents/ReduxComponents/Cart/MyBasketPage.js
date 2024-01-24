@@ -23,7 +23,7 @@ const MyBasketPage = () => {
     }
 
     return (<div className="mybasketContainer">
-        <h1 className="basketName">{totalQuantity === 0 ? "Your basket looks a little empty:(" : "Your basket looks great!"}</h1>
+        <h1 className="basketName">{totalQuantity === 0 ? "Your basket looks a little empty :(" : "Your basket looks great!"}</h1>
         {cartItems.map(cartItem  => <CartItem key={cartItem.id} cartItem={cartItem}/>)}
         <div>
             <h3 className="basketPrice">Total Price: $ {totalPrice}</h3>

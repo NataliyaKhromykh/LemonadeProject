@@ -14,44 +14,37 @@ import MyBasketPage from './ReduxComponents/Cart/MyBasketPage';
 import SignUp from './SignUp';
 import { RxHamburgerMenu } from "react-icons/rx";
 import Sidebar from './Sidebar';
-import React, { useState, useEffect } from "react";
+import React, { useState, useRef } from "react";
 import { useSelector } from 'react-redux';
 import { getTotalQuantity } from '../redux/cartSlice';
 import gsap from 'gsap';
 import Menu from '../Menu';
-import ModalApp from './ModalApp';
+import { useGSAP } from "@gsap/react";
+
 
 
 function Header() {
+  const container = useRef();
+  const tl = useRef();
 
     const [sidebarOpen,setSidebarOpen] = useState(false);
-    const [isMounted, setIsMounted] = useState(false);
     const totalQuantity = useSelector(getTotalQuantity);
 
-    useEffect(() => {
-      setIsMounted(true);
-    }, []);
+    useGSAP(() => {
+      tl.current = gsap.from(".effect",{opacity: 0, duration:3, delay: 2, stagger: 0.6, x: 100});
+  }, { scope: container });
 
-
-      useEffect(() => {
-        if (isMounted) {
-            gsap.from('.mainLinks', {opacity: 0, duration: 2, delay: 1 });
-          };
-        }, [isMounted]);
-
-  
   return <Router>
-    <nav>
+    <nav ref={container}>
       <Link to="/"><img className='logoImg' src={logo} alt="logo"/></Link>
-      <Link to="/" className='mainLinks forBlock'>Home</Link>
-      <Link className='mainLinks forBlock' to="/menu">Menu</Link>
-      <Link className='mainLinks forBlock' to="/aboutUs">About Us</Link>
-      <Link to="/contacts" className='mainLinks forBlock'>Contacts</Link>
-
-      {/* можно ли сделать вот так без link? */}
+      <Link to="/" className='mainLinks forBlock effect'>Home</Link>
+      <Link className='mainLinks forBlock effect' to="/menu">Menu</Link>
+      <Link className='mainLinks forBlock effect' to="/aboutUs">About Us</Link>
+      <Link to="/contacts" className='mainLinks forBlock effect'>Contacts</Link>
+      <div className='mainLinks'>
       <SignUp/> 
+      </div>
 
-      <Link><ModalApp/></Link>
 
       <RxHamburgerMenu className="hamIcon mainLinks" onClick={() => setSidebarOpen(true)}/>
       <div>

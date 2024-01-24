@@ -1,6 +1,8 @@
 import React from "react";
 import './../App.css';
 import promo from "./../Assests/promo.JPG";
+import Form from "./Formspree";
+
 
 function Popup(props) {
 
@@ -16,28 +18,14 @@ function Popup(props) {
         </div>
     </div>
     <div className="contactWrapper">
-    <div className="signingUpContainer">
-        <div>
-            <p className="inputName">Name</p>
-            <input className="messageInput" type="text" id="additionalFieldName" autoComplete="name" placeholder="Nataliya Khromykh"></input>
-        </div>
-        <div>
-            <p className="inputName">Email</p>
-            <input className="messageInput" type="email" id="additionalFieldEmail" autoComplete="email"  placeholder="natashakhromykh@gmail.com"></input>
-        </div>
-        <div>
-            <p className="inputName">Phone</p>
-            <input className="messageInput" type="tel" id="additionalFieldTel" autoComplete="tel" placeholder="+1(555) 666-77-88"></input>
-        </div>
-
-        <div>
-        <button className="submitBtn">Sign Up</button>
-        </div>
-        
-    </div>
+    <div>
+    <Form/>
+</div>
 <p className="promoP">* By signing up, you agree to receive email marketing</p>
     </div>
+
     </div>
+
                 <button className="close-btn" onClick={()=> props.setTrigger(false)}>X</button>
                 { props.chilren }
             </div>

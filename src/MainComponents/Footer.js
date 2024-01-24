@@ -5,7 +5,6 @@ import phone from  "./../Assests/telephone.png";
 import address from "./../Assests/address.png";
 import React from 'react';
 import {Link} from "react-router-dom";
-import ModalApp from "./ModalApp";
 
 
 function Footer(){
@@ -18,7 +17,6 @@ return(
             <img className="socialImg" src={facebook} alt="social"/>
             <img className="socialImg" src={whatsapp} alt="social"/>
         </div>
-<div><ModalApp/></div>
         
         <div>
 <div>
