@@ -239,7 +239,7 @@ export const dataDishes = [
     },
     {
         id: 35,
-        name: "Miso Butter Salmon with Sizzled Scallion Salsa Verde",
+        name: "Butter Salmon with Sizzled Scallion Salsa Verde",
         category: "Lunch/Dinner",
         price: 30,
         img: "MisoButter"
@@ -260,7 +260,7 @@ export const dataDishes = [
     },
     {
         id: 38,
-        name: "Creamy Sesame Miso Ramen with Crispy Mushrooms",
+        name: "Sesame Miso Ramen with Crispy Mushrooms",
         category: "Soups",
         price: 15,
         img: "CreamySesame"

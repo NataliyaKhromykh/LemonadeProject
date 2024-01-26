@@ -1,6 +1,6 @@
-import './App.css';
-import Dishes from './MainComponents/ReduxComponents/DishesComponents/Dishes';
-import AllCategories from './MainComponents/ReduxComponents/Filter/AllCategories';
+import '../App.css';
+import Dishes from './ReduxComponents/DishesComponents/Dishes';
+import AllCategories from './ReduxComponents/Filter/AllCategories';
 
 
 function Menu() {
@@ -12,7 +12,6 @@ function Menu() {
             <div >
             <Dishes/> 
             </div>
-                 
         </div>
     )
 }

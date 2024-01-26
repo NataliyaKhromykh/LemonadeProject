@@ -9,7 +9,7 @@ function Popup(props) {
     return (props.trigger) ? (
         <div className="popup">
             <div className="popup-inner">
-   <div className="detailsBarWrapper">
+    <div className="detailsBarWrapper">
     <div className="divPromo">
     <img className="promoPhoto" src={promo} alt="promo"/>
     <div className="infoPromo">

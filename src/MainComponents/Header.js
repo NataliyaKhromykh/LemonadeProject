@@ -18,7 +18,7 @@ import React, { useState, useRef } from "react";
 import { useSelector } from 'react-redux';
 import { getTotalQuantity } from '../redux/cartSlice';
 import gsap from 'gsap';
-import Menu from '../Menu';
+import Menu from './Menu';
 import { useGSAP } from "@gsap/react";
 
 

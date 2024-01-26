@@ -27,7 +27,7 @@ return(
 
         <div className="contDetails">
             <img className="socialImgCont" src={address} alt="social"/>
-            <p className="contPar">Orange Street, 17,<br></br>Orlando,FL,USA</p>
+            <p className="contPar">Orange Street, 123,<br></br>Orlando,FL,USA</p>
         </div>
 </div>
 
