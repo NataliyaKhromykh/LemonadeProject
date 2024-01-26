@@ -1,6 +1,23 @@
 # Getting Started with Create React App
+LemonadeCafe is a vibrant and interactive web application crafted with the power of React and state management handled seamlessly by Redux. This project originated as a captivating challenge, forming a crucial part of my school curriculum where creativity met functionality.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Technologies Used
+
+React
+Redux
+
+## Key Features
+
+GSAP
+React Router
+
+Also added Formspree form 
+
+
+[In the future would like to add JSON SERVER for the basket]
+
 
 ## Available Scripts
 
